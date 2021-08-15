@@ -1,0 +1,173 @@
+body{
+    background-color: rgb(209, 211, 245);
+    margin: 0px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: perspective(600px);
+  }
+  .eid_menu{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    overflow: hidden;
+  }
+  .eid_menu .eid_title{
+    text-align: center;
+  }
+  .eid_menu .eid_title h1{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0px;
+    line-height: 50px;
+    background: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0px 2px red, 0px -2px red, 2px 0px red, -2px 0px red;
+    border-radius: 10px;
+    filter: brightness(200%);
+  }
+  .eid_menu .eid_title h1::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient( black, white) 0 0/ 10px 40%;
+    animation: 2s linear eid_title  infinite;
+    mix-blend-mode: multiply;
+  }
+  @keyframes eid_title{
+    0%{
+      top: -20px;
+      left: -20px;
+    }
+     100%{
+      top: 20px;
+      left: 20px;
+    }
+  }
+  
+  
+  .eid_menu_invite_box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0px;
+    left: 0px;
+    transform-style: preserve-3d;
+    transform: perspective(2000px) rotateX(-47deg) rotateY(42deg) scale(.8,.8)  translateX(222px)translateY(-92px);
+  }
+  .eid_menu_invite_box [id*="invite"]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .eid_menu_invite_box #invite1{
+    transform: translateZ(100px);
+    background: url("") 0 0/ 100% 100%;
+  }
+  .eid_menu_invite_box #invite2{
+    transform: translateZ(-100px);
+    background: url("https://i2-prod.birminghammail.co.uk/incoming/article13229628.ece/ALTERNATES/s615b/eid-card-amazonJPG.jpg") 0 0/ 100% 100%;
+  }
+  .eid_menu_invite_box #invite3{
+    transform:rotateY(-90deg) translateZ(100px);
+    background: url("https://i2-prod.birminghammail.co.uk/incoming/article13229628.ece/ALTERNATES/s615b/eid-card-amazonJPG.jpg") 0 0/ 100% 100%;
+  }
+  .eid_menu_invite_box #invite4{
+    transform: rotateY(90deg) translateZ(100px);
+    background: url("https://i2-prod.birminghammail.co.uk/incoming/article13229628.ece/ALTERNATES/s615b/eid-card-amazonJPG.jpg") 0 0/ 100% 100%;
+  }
+  .eid_menu_invite_box #invite5{
+    transform: rotateX(90deg) translateZ(100px);
+      background: transparent;
+  }
+  .eid_menu_invite_box #invite6{
+    transform: rotateX(-90deg) translateZ(100px);
+    background: url("https://i2-prod.birminghammail.co.uk/incoming/article13229628.ece/ALTERNATES/s615b/eid-card-amazonJPG.jpg") 0 0/ 100% 100%;
+  }
+  /*......Other .. Friends Invite....*/
+  #invite7{ 
+    transform: translateX(633px) rotateX(47deg) rotateY(-52deg) rotateZ(33deg)  ;
+    background: url("https://media.giphy.com/media/xUA7aYx7nPwzRy5G5a/giphy.gif") 0 0/ 100% 100%;
+   
+    animation-delay: .5s;
+  }
+  #invite8{ 
+    transform: translateX(603px)  rotateX(47deg) rotateY(-52deg) rotateZ(33deg)  ;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROY6VMrFEhNHIRJQu4pCTjXxb30JlwsPm_YlMhUi40c_7cVJR3") 0 0/ 100% 100%;
+   
+      animation-delay: 1s;
+  }
+  #invite9{ 
+    transform: translateX(573px)  rotateX(47deg) rotateY(-52deg) rotateZ(33deg)  ;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMo4Wo7x1y5UgESmw2bVbZNfHyXKr0zOMizVS4Ixi8xYu6SlvvCA") 0 0/ 100% 100%;
+   
+      animation-delay: 1.5s;
+  }
+  #invite10{ 
+    transform: translateX(543px)  rotateX(47deg) rotateY(-52deg) rotateZ(33deg);
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGoiSbkqi3f-Bssy77C2f9FFHGqkQOJoQrWwWwb5V3OMLh1s_ppg") 0 0/ 100% 100%;
+   
+      animation-delay: 2s;
+  }
+  #invite11{ 
+    transform: translateX(513px)  rotateX(47deg) rotateY(-52deg) rotateZ(33deg);
+    background: url("https://i.ytimg.com/vi/xlr9kPLF4e4/hqdefault.jpg") 0 0/ 100% 100%;
+   
+      animation-delay: 2.5s;
+  }
+  #invite12{ 
+    transform: translateX(483px)  rotateX(47deg) rotateY(-52deg) rotateZ(33deg);
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzxHR9RHd_OO7M1nqWZyd6nNIgvojmXTLvG3jSSy47NL0UmML") 0 0/ 100% 100%;
+   
+      animation-delay: 3s;
+  }
+  #invite13{ 
+    transform: translateX(453px)  rotateX(47deg) rotateY(-52deg) rotateZ(33deg);
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGoiSbkqi3f-Bssy77C2f9FFHGqkQOJoQrWwWwb5V3OMLh1s_ppg") 0 0/ 100% 100%;
+    
+      animation-delay: 3.5s;
+  }
+  #invite14{ 
+    transform: translateX(423px)  rotateX(47deg) rotateY(-52deg) rotateZ(33deg);
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuYoP5SPqRglZARH85OpJ3aYooX0Ss9x6DZ1QGFkiSZ2EYUTo5") 0 0/ 100% 100%;
+   
+      animation-delay: 4s;
+  }
+  #invite15{ 
+    transform: translateX(393px)  rotateX(-47deg) rotateY(-52deg) rotateZ(33deg);
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-mzexSSBZR--RFxlAdl1hmjDkuk1zBP5fEyY1jK41nX8OZjdCA") 0 0/ 100% 100%;
+   
+      animation-delay: 4.5s;
+  }
+  .fr_invite{
+    animation: 10s linear infinite  fr_invite alternate backwards;
+   
+  }
+  @keyframes fr_invite{
+    0%{
+      transform: rotateX(-90deg) translateZ(500px);
+    }
+    70%{
+      transform: rotateX(90deg);   translateY(0px) translateZ(500px);
+    }
+    
+    90%{
+      transform: rotateX(90deg) translateZ(100px);
+    }
+    100%{
+      transform: translateX(393px)  rotateY(-52deg) rotateZ(33deg);
+    }
+  }
